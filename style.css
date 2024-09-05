@@ -1,0 +1,60 @@
+body {
+    margin: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.my-img {
+    width: 150px;
+    height: 150px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 100px;
+}
+
+@keyframes coloring {
+    25% {background-color: #91AB50}
+    50% {background-color: #85C6A8}
+    75% {background-color: #EE7970}
+    100% {background-color: #CA7149}
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #EE7970;
+    text-align: center;
+    color: #212529;
+    text-shadow: 2px 2px 4px #e9ecef;
+    animation-name: coloring;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+
+.b-border {
+    border-bottom: 12px solid #E29E50;
+    border-top: 12px solid #E29E50;
+    border-top-left-radius: 30px ;
+    border-bottom-right-radius: 30px;
+}
+
+.my-img:hover {
+    content: url(./Secondary.jpg);
+    width: 175px;
+    height: 175px;
+    transform: rotate(-360deg);
+}
+
+.details {
+    transition: all 1s ease-in-out 0.2s;
+}
+
+.details:hover {
+    color: #e9ecef;
+    text-shadow: 2px 2px 4px #212529;
+    font-size: 120%;
+    transform: rotate(360deg);
+}
